@@ -122,7 +122,7 @@ public class AffineTransformTest {
   private void assertTransform(float ex, float ey, AffineTransform t, float x, float y) {
     Point q = t.transform(x, y);
     
-    assertEquals(ex, q.x, 0.001);
-    assertEquals(ey, q.y, 0.001);
+    assertEquals(ex, q.getX(), 0.001);
+    assertEquals(ey, q.getY(), 0.001);
   }
 }
