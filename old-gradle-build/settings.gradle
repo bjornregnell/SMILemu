@@ -1,3 +1,0 @@
-include ':smilemu'
-include ':graphic'
-project(':graphic').projectDir = new File(settingsDir, '../Graphic/graphic')

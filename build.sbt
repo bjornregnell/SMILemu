@@ -15,5 +15,5 @@ javacOptions += "-Xlint:deprecation"
 assembly / assemblyJarName := "SMILemu.jar"
 
 libraryDependencies ++= Seq(
-  "com.novocode" % "junit-interface" % "0.11" % Test,
+  "junit" % "junit" % "4.11" % Test,
 )
