@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -89,7 +90,8 @@ public class DocBrowser extends JPanel {
     DefaultMutableTreeNode treeRoot = new DefaultMutableTreeNode("Documentation");
     for (TreeNode docNode : docNodes) {
       try {
-        Doc doc = Doc.doc(new URL(docNode.urlString));
+        //Doc doc = Doc.doc(new URL(docNode.urlString));
+        Doc doc = Doc.doc(URI.create(docNode.urlString).toURL());
         if (doc != null) {
           DefaultMutableTreeNode docTreeNode = new DefaultMutableTreeNode(docNode);
           TocNode tocRoot = doc.tocRoot();
@@ -245,7 +247,8 @@ public class DocBrowser extends JPanel {
     if (internalUrlStrings.contains(urlString)) {
       if (lastUrlString == null || !lastUrlString.equals(urlStringWithPart)) {
         try {
-          URL url = new URL(urlString);
+          //URL url = new URL(urlString);
+          URL url = URI.create(urlString).toURL();
           Doc doc = Doc.doc(url);
           byte[] data = doc.data(part != null ? part : doc.defaultIdent());
           InputStream is = new ByteArrayInputStream(data);

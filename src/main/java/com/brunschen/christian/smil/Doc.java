@@ -60,7 +60,7 @@ public class Doc {
   private List<String> parts = new ArrayList<String>();
   private String header = "", footer = "";
 
-  public class TocNode {
+  public static class TocNode {
     private TocNode parent;
     private String name;
     private List<TocNode> children = new ArrayList<TocNode>();
