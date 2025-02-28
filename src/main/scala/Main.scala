@@ -13,17 +13,12 @@ class FakeSoundGenerator extends SoundGenerator:
   override def pushBufferToDestination(): Unit = ()
   override def canGenerateSound(): Boolean = false
 
-class FakeTypewriter extends Typewriter.Default {
+class FakeTypewriter extends Typewriter.Default:
   var builder = StringBuilder()
   override def length(): Int = builder.length
   override def append(s: String): Unit = builder.append(s)
   override def text(): String = builder.toString
   override def clear(): Unit = builder = new StringBuilder()
-
-}
-
-
-
 
 @main def Main = 
   println("hello")
