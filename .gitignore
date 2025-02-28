@@ -4,3 +4,4 @@
 **/.bloop
 **/metals.sbt
 **/.bsp
+**/.scala-build
