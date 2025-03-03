@@ -21,7 +21,6 @@ The original code was based on ancient Java code that are no longer part of a mo
 
 * Make sure you have Scala-tools, esp. sbt, available by installing the Scala distribution from here: https://www.scala-lang.org/download/ 
 * Download or clone this repo locally.
-* Make sure you have scala tools including sbt or else install from here: https://www.scala-lang.org/download/ 
 * Type `sbt run` 
   * type 1+ENTER for `[1] Main` to make a simple print of registers to terminal 
   * type 2+ENTER for `[2] com.brunschen.christian.smil.SMILApp` to start the Swing GUI App
