@@ -2,7 +2,7 @@
 
 SMILemu is an emulator of Lund's first computer [SMIL](https://en.wikipedia.org/wiki/SMIL_(computer)). The emulator is written in Java by [Christian Brunschen](https://github.com/cbrunschen).
 
-* The code is forked from: https://github.com/cbrunschen/SMILemu and then code from here is inserted to cretae a complete monorepo:
+* The code is forked from: https://github.com/cbrunschen/SMILemu and then code from here is inserted to form a complete monorepo:
   * https://github.com/cbrunschen/Graphic
   * https://github.com/cbrunschen/Graphic_Swing
   * https://github.com/cbrunschen/SMILemu_Swing
