@@ -7,7 +7,7 @@ SMILemu is an emulator of Lund's first computer [SMIL](https://en.wikipedia.org/
   * https://github.com/cbrunschen/Graphic_Swing
   * https://github.com/cbrunschen/SMILemu_Swing
 
-The original code was based on ancient Java code that are no longer part of a modern JVM. This monorepo removes old stuff and includes things to make it build for a modern JVM with Java 21 using the Scala build tool call [sbt](https://www.scala-sbt.org/).
+The original code was based on ancient Java code that are no longer part of a modern JVM. This monorepo removes old stuff and includes things to make it build for a modern JVM with at least Java 21 using the Scala build tool call [sbt](https://www.scala-sbt.org/).
 
 ## How to run 
 
