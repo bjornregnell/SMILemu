@@ -14,6 +14,8 @@ javacOptions += "-Xlint:deprecation"
 
 assembly / assemblyJarName := "SMILemu.jar"
 
+assembly / mainClass := Some("com.brunschen.christian.smil.SMILApp")
+
 libraryDependencies ++= Seq(
   "junit" % "junit" % "4.11" % Test,
 )
