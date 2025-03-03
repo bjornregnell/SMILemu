@@ -5,7 +5,7 @@ package com.brunschen.christian.smil;
 
 import javax.swing.table.DefaultTableCellRenderer;
 
-class DoubleRenderer extends DefaultTableCellRenderer {
+public class DoubleRenderer extends DefaultTableCellRenderer {
   public static final long serialVersionUID = 0L;
 
   public DoubleRenderer() {
